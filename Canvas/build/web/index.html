@@ -1,0 +1,52 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+    <style>
+    #lienzo{
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+      display:block;
+      border: 1px solid #000;
+    }
+    </style>
+
+        
+      <script type="text/javascript">
+		
+		function cargarDibujo(){
+                var lienzo = document.getElementById('lienzo');
+                var lienzo1 = lienzo.getContext('2d');
+                
+             
+                lienzo1.fillStyle = "rgba(0, 0, 200, 1)";
+                lienzo1.fillRect(120,60,280,40);
+                
+                lienzo1.fillStyle = "rgba(200, 0, 0, 1)";
+                lienzo1.fillRect(120,100,280,15);
+		                
+                lienzo1.fillStyle = "rgba(255, 255, 255, 1)";
+                lienzo1.fillRect(120,115,280,40);
+                
+                lienzo1.fillStyle = "rgba(200, 0, 0, 1)";
+                lienzo1.fillRect(120,155,280,15);
+                
+                lienzo1.fillStyle = "rgba(0, 128, 0, 1)";
+                lienzo1.fillRect(120,170,280,40);
+		}
+                             
+	  </script>
+    
+    
+    </head>
+    <body onload="cargarDibujo()">
+    <center>  <h1>La bandera de Santiago de Cali</h1></center>
+        <canvas id="lienzo" width="500" height="300"></canvas>
+    </body>
+</html>
